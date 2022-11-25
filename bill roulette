@@ -1,0 +1,24 @@
+# A bill roulette game, who will pay the bill?
+
+# We import the random function
+import random
+
+# We requst everyone name
+names_str = input("inform me of everybody's name, separated by a comma and space please. ")
+
+# We take the names and split them using the ,
+names = names_str.split(", ")
+# Len allows us to see the amount of names inputted
+num_items = len(names)
+# We pick a random name using the function below (random being the import and randint being a random integer.) starting from 0 and -1 the end.
+random_choice = random.randint(0, num_items - 1)
+# We take a random number from the random choice and apply it to the names. This person will pay.
+person_who_will_pay = names[random_choice]
+
+print(person_who_will_pay + " is going to buy the meal today!")
+
+
+
+
+
+
