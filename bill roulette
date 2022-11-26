@@ -15,6 +15,8 @@ random_choice = random.randint(0, num_items - 1)
 # We take a random number from the random choice and apply it to the names. This person will pay.
 person_who_will_pay = names[random_choice]
 
+# Alternative person_who_will_pay = random.choice(names) 
+
 print(person_who_will_pay + " is going to buy the meal today!")
 
 
